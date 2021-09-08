@@ -7,10 +7,11 @@ html {
 body{
   height: 200px;
   background-color:grey;
- background-image: url('li.png');
+ background-image: url('newdark.jpeg');
  background-repeat:repeat;
+
  background-position: center;
- background-blend-mode: color-burn;
+background-blend-mode: luminosity;
  background-size: cover;
 
 }
@@ -117,17 +118,22 @@ input[type="text"]:focus {
 border-color: transparent;
 border-radius: 5px;
 background-color: inherit;
-  color: #7F5217;
+  color:black;
+  background-color:#696969;
   font-size: 17px;
   padding-bottom: 1px;
 
 }
 button:hover {
-  background-color: #566D7E;
+  background-color:grey;
+
 }
 
 footer {
   color: white;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+}
+footer:hover{
+  color: gold;
 }
