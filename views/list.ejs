@@ -9,14 +9,21 @@
 
     <form class="item" action="/" method="post">
   <input type="text" name="newitem" value="" placeholder="New item" autocomplete="off">
-  <button type="submit" name="plusbutton" value="<%= listTitle %>">+</button>
-    </form>
+  <button type="submit" name="plusbutton" value="<%= listTitle %>">+</button>&nbsp;
+      <button type="submit" name="minusbutton" value="<%= listTitle %>">-</button>&nbsp;&nbsp;
+  </form>
+
 </div>
 <% if (listTitle !== "Work List") { %>
   <form action="/work" method="post">
   <button class="workbutton" type="submit">Edit Work List</button>
   </form>
  <% } %>
+ <% if (listTitle === "Work List") { %>
+   <form action="/" method="post">
+   <button class="workbutton" type="submit">Home</button>
+   </form>
+  <% } %>
 
 <br>
 <%- include("footer") -%>

@@ -75,18 +75,20 @@ p {
 form {
   text-align: center;
   margin-left: 20px;
+
 }
 
 button {
-  min-height: 50px;
-  width: 50px;
+  min-height: 30px;
+  width: 30px;
   border-radius: 50%;
   border-color: transparent;
   background-color: #25383C;
   color: #fff;
-  font-size: 30px;
-  padding-bottom: 6px;
+  font-size: 25px;
+  padding-bottom: 3px;
   border-width: 0;
+
 }
 
 input[type="text"] {

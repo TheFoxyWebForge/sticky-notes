@@ -22,15 +22,28 @@ res.render("list",{listTitle: "Work List", thenewitem :worklists});
 
 app.post("/",function (req, res){
   let item = req.body.newitem;
-  if(req.body.plusbutton ==="Work List"){
+if (req.body.plusbutton) {  if(req.body.plusbutton ==="Work List"){
     worklists.push(item);
 res.redirect("/work");
-
 }
 else{
   items.push(item);
 res.redirect("/");
 }
+
+}
+else {
+
+  if(req.body.minusbutton ==="Work List"){
+    worklists.pop(item);
+  res.redirect("/work");
+  }
+  else{
+  items.pop(item);
+  res.redirect("/");
+  }
+}
+
 });
 
 app.post("/work",function(req, res) {
