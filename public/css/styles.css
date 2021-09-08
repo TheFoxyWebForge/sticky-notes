@@ -18,13 +18,13 @@ background-blend-mode: luminosity;
 .top{
   text-align: center;
 
-  color: yellow;
+  color: gold;
 
   font-size: 20px;
 
 }
 h1 {
-  color: #fff;
+
   padding: 10px;
 
 }
@@ -40,8 +40,9 @@ h1 {
 }
 
 #heading {
-  background-color:#25383C;
+  background-image: url('li.png');
   text-align: center;
+  color: black;
 
 }
 
@@ -84,8 +85,10 @@ button {
   width: 30px;
   border-radius: 50%;
   border-color: transparent;
-  background-color: #25383C;
-  color: #fff;
+  color:black;
+  background-image: url('li.png');
+  background-position: center;
+  background-size: cover;
   font-size: 25px;
   padding-bottom: 3px;
   border-width: 0;
@@ -119,13 +122,15 @@ border-color: transparent;
 border-radius: 5px;
 background-color: inherit;
   color:black;
-  background-color:#696969;
+  background-image: url('li.png');
+  background-position: center;
+  background-size: cover;
   font-size: 17px;
   padding-bottom: 1px;
 
 }
 button:hover {
-  background-color:grey;
+  background-image: url();
 
 }
 
